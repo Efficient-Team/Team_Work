@@ -6,6 +6,34 @@
     android:orientation="vertical"
 
    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#8034A2DA"
+        >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/back"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="添加目标"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:paddingRight="40dp"
+
+
+            />
+
+
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/prompt"
@@ -15,6 +43,7 @@
         android:padding="10dp"
         android:gravity="center"
         android:background="#D9ffff"
+        android:textColor="@drawable/black"
         />
 
     <Button
@@ -26,6 +55,7 @@
         android:text="今日目标"
         android:textSize="20dp"
         android:layout_marginTop="40dp"
+        android:textColor="@drawable/black"
         />
 
     <Button
@@ -37,6 +67,7 @@
         android:text="本周目标"
         android:textSize="20dp"
         android:layout_marginTop="40dp"
+        android:textColor="@drawable/black"
         />
 
     <Button
@@ -48,6 +79,7 @@
         android:text="本月目标"
         android:textSize="20dp"
         android:layout_marginTop="40dp"
+        android:textColor="@drawable/black"
         />
 
     <Button
@@ -59,6 +91,7 @@
         android:text="年度目标"
         android:textSize="20dp"
         android:layout_marginTop="40dp"
+        android:textColor="@drawable/black"
         />
 
 </LinearLayout>

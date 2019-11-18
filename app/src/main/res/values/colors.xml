@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#34a2da</color>
-    <color name="colorPrimaryDark">#3d85c6</color>
-    <color name="colorAccent">#D81B60</color>
+    <drawable name="black">#000000</drawable>
+    <drawable name="white">#FFFFFF</drawable>
 </resources>

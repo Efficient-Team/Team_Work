@@ -3,7 +3,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/white"
 >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#34A2DA"
+        >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/back"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="编辑目标"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:paddingRight="40dp"
+
+
+            />
+
+
+
+    </LinearLayout>
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="30dp"
@@ -13,6 +42,7 @@
         android:layout_height="wrap_content"
         android:text="选择时间"
         android:gravity="center"
+        android:textColor="@drawable/black"
         />
 
 </LinearLayout>
@@ -25,7 +55,7 @@
         android:layout_height="400dp"
         android:hint="请输入您的目标"
         android:gravity="center"
-
+        android:textColorHint="@drawable/black"
 
         />
 

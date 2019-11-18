@@ -14,6 +14,7 @@ private Button today_goal;
     private Button week_goal;
     private Button month_goal;
     private Button year_goal;
+    private Button back;
 @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +63,15 @@ private Button today_goal;
         @Override
         public void onClick(View b4){
             Intent intent=new Intent(AddContent.this,editor_content.class);
+            startActivity(intent);
+        }
+    });
+
+    Button b5=findViewById(R.id.back);
+    b5.setOnClickListener(new View.OnClickListener(){
+        @Override
+                public void onClick(View b5){
+            Intent intent=new Intent(AddContent.this,MainActivity.class);
             startActivity(intent);
         }
     });
