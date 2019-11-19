@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sky"
+    android:orientation="vertical"
+>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#8034A2DA"
+    >
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/back"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="已完成"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:paddingRight="40dp"
+        />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="获取已设定的目标，显示已完成的目标"
+            android:gravity="center"
+            android:textColor="@drawable/black"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+

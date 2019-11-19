@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".editor_content"></activity>
+        <activity android:name=".limit_content"></activity>
+        <activity android:name=".complete_content" />
+        <activity android:name=".plan_content" />
+        <activity android:name=".editor_content" />
         <activity android:name=".AddContent" />
         <activity android:name=".MainActivity">
             <intent-filter>

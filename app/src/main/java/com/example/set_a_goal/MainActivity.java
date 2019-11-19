@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnaddgoal;
     private  TextView textView;
     private Handler handler;
+    private Button plan;
+    private Button complete;
+    private Button limit;
 
 
 
@@ -25,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //页面跳转
         mBtnaddgoal=findViewById(R.id.btn_add_goal);
         mBtnaddgoal.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -33,6 +38,36 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button b1=findViewById(R.id.plan);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,plan_content.class);
+                startActivity(intent);
+            }
+        });
+
+        Button b2=findViewById(R.id.complete);
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,complete_content.class);
+                startActivity(intent);
+            }
+        });
+
+        Button b3=findViewById(R.id.limit);
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,limit_content.class);
+                startActivity(intent);
+            }
+        });
+
+
+
         //获取时间日期
         textView=(TextView)findViewById(R.id.tv_time);
 
@@ -58,12 +93,15 @@ public class MainActivity extends AppCompatActivity {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }    //获取时间日期结束
-
-
-
-
-
         }
+
+
+
+
+
+
+
+
     }
 
 
