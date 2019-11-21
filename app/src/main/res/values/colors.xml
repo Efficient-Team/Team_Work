@@ -2,4 +2,7 @@
 <resources>
     <drawable name="black">#000000</drawable>
     <drawable name="white">#FFFFFF</drawable>
+    <drawable name="blue">#87CEFA</drawable>
+    <drawable name="bt_color">#f4f4f4</drawable>
+    <drawable name="ancirentwhite">#FAEBD7</drawable>
 </resources>

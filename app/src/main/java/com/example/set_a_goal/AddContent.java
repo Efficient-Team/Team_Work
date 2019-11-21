@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.TextView;
 
 public class AddContent extends AppCompatActivity {
@@ -28,7 +29,7 @@ private Button today_goal;
         b1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View b1){
-                Intent intent=new Intent(AddContent.this,editor_content.class);
+                Intent intent=new Intent(AddContent.this,TimePickerActivity.class);
                 startActivity(intent);
             }
         });
@@ -39,7 +40,7 @@ private Button today_goal;
     b2.setOnClickListener(new View.OnClickListener(){
         @Override
         public void onClick(View b2){
-            Intent intent=new Intent(AddContent.this,editor_content.class);
+            Intent intent=new Intent(AddContent.this, DatePickerActivity.class);
             startActivity(intent);
         }
     });
@@ -51,7 +52,7 @@ private Button today_goal;
     b3.setOnClickListener(new View.OnClickListener(){
         @Override
         public void onClick(View b3){
-            Intent intent=new Intent(AddContent.this,editor_content.class);
+            Intent intent=new Intent(AddContent.this,DatePickerActivity.class);
             startActivity(intent);
         }
     });
@@ -62,7 +63,7 @@ private Button today_goal;
     b4.setOnClickListener(new View.OnClickListener(){
         @Override
         public void onClick(View b4){
-            Intent intent=new Intent(AddContent.this,editor_content.class);
+            Intent intent=new Intent(AddContent.this,DatePickerActivity.class);
             startActivity(intent);
         }
     });
